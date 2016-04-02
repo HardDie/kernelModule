@@ -9,7 +9,7 @@ compile:
 	$(MAKE) -C $(KERNELDIR) M=$(PWD) modules
 
 install:
-	mv *.o .*.cmd *.ko *.mod.c *.order *.symvers .tmp_* bin/
+	mv *.o .*.cmd *.ko *.mod.c *.order *.symvers bin/
 
 clean:
-	rm -rf bin/*
+	rm -rf bin/* .tmp*
